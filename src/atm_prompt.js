@@ -21,10 +21,10 @@ if (userPin === pinNumber){
     if (accountBalance >= withdrawalAmount){
         let newAccountBalance = accountBalance - withdrawalAmount;
        
-        receiptText.innerText = "TRANSACTION SUCCESSFUL!";
+        receiptTitle.innerText = "TRANSACTION SUCCESSFUL!";
         receiptText.innerText = `Dispensing cash... You withdrew ${withdrawalAmount}. Your new account balance is ${newAccountBalance}.`;
     }else{
-        receiptText.innerText = "INSUFFICIENT FUNDS";
+        receiptTitle.innerText = "TRANSACTION FAILED!";
         receiptText.innerText = `Insufficient funds. Your current account balance is ${accountBalance}. Please try again.`;
     }
 } else{
